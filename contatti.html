@@ -1,0 +1,106 @@
+
+<html>
+<head>
+<title>Contatti - Z&E</title>
+<link rel="stylesheet" href="style.css">
+<style>
+
+.contatti-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.contatti-container h1 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.contatti-container p, .contatti-container label {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1em;
+    color: #000;
+}
+
+.contatti-container input, 
+.contatti-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.contatti-container button {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    font-size: 1em;
+}
+
+.contatti-container button:hover {
+    background-color: #333;
+}
+</style>
+</head>
+<body>
+
+
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+<nav class="menu">
+    <a href="homepage.html">Home</a>
+    <a href="chi_siamo.html">Chi Siamo</a>
+    <a href="creazioni.html">Le Nostre Creazioni</a>
+    <a href="my_culture.html">My Culture</a>
+    <a href="gioielli.html">Gioielli</a>
+    <a href="tacchi.html">Tacchi</a>
+    <a href="servizi.html">Servizi</a>
+    <a href="contatti.html">Contatti</a>
+</nav>
+
+<div class="contatti-container">
+    <h1>CONTATTI</h1>
+    <p>
+        📧 Email: info@z&emoda.com<br />
+        📸 Instagram: @z&emoda<br />
+        📱 WhatsApp: +39 333 1234567<br /><br />
+        📍 Siamo a Milano - su appuntamento.<br /><br />
+        Grazie per aver visitato il nostro sito! Se vuoi maggiori informazioni, scrivici qui sotto:
+    </p>
+
+    <form action="mailto:info@z&emoda.com" method="post" enctype="text/plain">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="cognome">Cognome</label>
+        <input type="text" id="cognome" name="cognome" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefono">Telefono</label>
+        <input type="tel" id="telefono" name="telefono">
+
+        <label for="messaggio">Messaggio</label>
+        <textarea id="messaggio" name="messaggio" rows="5" required></textarea>
+
+        <button type="submit">Invia Messaggio</button>
+    </form>
+</div>
+
+</body>
+</html>
+
+
+
